@@ -1,0 +1,41 @@
+/* CSS file for CancerRelay */
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+span.textSpan {
+  font-size: 72px;
+}
+div.focus {
+  border: solid 1px;
+}
+#teamTotalDiv {
+  float: left;
+  padding: 5px;
+  text-align: center;
+  /*background-color: cyan;*/
+}
+#townTotalDiv {
+  float: right;
+  padding: 5px;
+  text-align: center;
+  /*background-color: coral;*/
+}
+#totalMileageDiv {
+  text-align: center;
+  margin-top: 100px;
+  /*background-color: yellow;*/
+}
+#teamTotalCount {
+  font-size: 128px;
+  font-weight: bolder;
+}
+#townTotalCount {
+  font-size: 128px;
+  font-weight: bolder;
+}
+#totalCount {
+  font-size: 512px;
+  font-weight: bolder;
+}
