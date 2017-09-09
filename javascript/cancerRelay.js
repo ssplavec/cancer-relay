@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
 });
 
-addItUp = function(entry){ //}, divFocus){
+addItUp = function(entry){
   if ($('#teamTotalDiv').hasClass('focus')) {
     incrementTeamCount(entry);
   } else if($('#townTotalDiv').hasClass('focus')) {
