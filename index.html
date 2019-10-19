@@ -6,35 +6,42 @@
     <script src="javascript/jquery-3.1.1.min.js"></script>
     <script src="javascript/cancerRelay.js"></script>
   </head>
-
   <body>
-    <div>
-      <div id='logoDiv'>
-        <img class="logo" src="images/cancerRelay.jpg" width="510" height="312"/>
+      <div style="padding:20px;">
       </div>
 
-      <div id="mileageDiv">
-        <div id="teamTotalDiv">
-          <span class="textSpan">Relay Team</span>
-          <br/>
-          <span id="teamTotalCount">0</span>
-          <br/>
-          <span class="textSpan">Miles Run</span>
+      <div class="row">
+        <div id="teamTotalDiv" class="column">
+            <span class="textSpan">Relay Team</span>
+            <br/>
+            <span id="teamTotalCount">0</span>
+            <br/>
+            <span class="textSpan">Miles Run</span>
         </div>
-        <div id="townTotalDiv">
-          <span class="textSpan">Community</span>
-          <br/>
-          <span id="townTotalCount">0</span>
-          <br/>
-          <span class="textSpan">Miles Run</span>
+
+        <div id="logoDiv" class="column">
+            <img class="logo" src="images/cancerRelay.jpg" width="510" height="312"/>
+        </div>
+
+        <div id="townTotalDiv" class="column">
+            <span class="textSpan">Community</span>
+            <br/>
+            <span id="townTotalCount">0</span>
+            <br/>
+            <span class="textSpan">Miles Run</span>
         </div>
       </div>
 
-      <div id="totalMileageDiv">
-        <span id="totalCount">0</span>
-        <br/>
-        <span class="textSpan">Total Miles Run</span>
+      <div id="totalMileageRow" class="row">
+        <div class="column"></div>
+
+        <div id="totalMileageDiv" class="column">
+            <span id="totalCount">0</span>
+            <br/>
+            <span class="textSpan">Total Miles Run</span>
+        </div>
+
+        <div class="column"></div>
       </div>
-    </div>
   </body>
 </html>

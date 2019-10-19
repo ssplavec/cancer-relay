@@ -30,6 +30,11 @@ $(document).ready(function() {
           localStorage.totalCount = 0;
         }
     });
+
+    $('#totalMileageRow').click(function() {
+        $('#townTotalDiv').removeClass('focus');
+        $('#teamTotalDiv').removeClass('focus');
+    })
 });
 
 var addItUp = function(entry) {
