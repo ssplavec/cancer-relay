@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>2017 Knoxville Cancer Relay</title>
+    <title>2019 Knoxville Cancer Relay</title>
     <link rel="stylesheet" type="text/css" href="css/cancerRelay.css">
     <script src="javascript/jquery-3.1.1.min.js"></script>
     <script src="javascript/cancerRelay.js"></script>
   </head>
   <body>
-      <div style="padding:20px;">
+      <div id="headerRow" style="padding:10px;">
+        <div id="headerDiv" class="column">
+          <span class="textSpan">Relay Team</span>
+        </div>
+
+        <div class="column"></div>
+
+        <div id="headerDiv" class="column">
+          <span class="textSpan">Community</span>
+        </div>
       </div>
 
       <div class="row">
-        <div id="teamTotalDiv" class="column">
-            <span class="textSpan">Relay Team</span>
-            <br/>
-            <span id="teamTotalCount">0</span>
-            <br/>
-            <span class="textSpan">Miles Run</span>
+        <div id="teamGenderColumn" class="column">
+          <div id="teamMenDiv" class="genderColumn">
+              <span class="genderTextSpan">Men</span>
+              <br/>
+              <span id="teamMenTotal">0</span>
+              <br/>
+              <span class="genderTextSpan">Miles Run</span>
+          </div>
+          <div id="teamWomenDiv" class="genderColumn">
+              <span class="genderTextSpan">Women</span>
+              <br/>
+              <span id="teamWomenTotal">0</span>
+              <br/>
+              <span class="genderTextSpan">Miles Run</span>
+          </div>
         </div>
 
         <div id="logoDiv" class="column">
-            <img class="logo" src="images/cancerRelay.jpg" width="510" height="312"/>
+            <img class="logo" src="images/cancerRelay.jpg" width="400" height="300"/>
         </div>
 
-        <div id="townTotalDiv" class="column">
-            <span class="textSpan">Community</span>
+        <div id="townGenderColumn" class="column">
+          <div id="townMenDiv" class="genderColumn">
+            <span class="genderTextSpan">Men</span>
             <br/>
-            <span id="townTotalCount">0</span>
+            <span id="townMenTotal">0</span>
             <br/>
-            <span class="textSpan">Miles Run</span>
-        </div>
+            <span class="genderTextSpan">Miles Run</span>
+          </div>
+          <div id="townWomenDiv" class="genderColumn">
+            <span class="genderTextSpan">Women</span>
+            <br/>
+            <span id="townWomenTotal">0</span>
+            <br/>
+            <span class="genderTextSpan">Miles Run</span>
+          </div>
       </div>
+    </div>
 
-      <div id="totalMileageRow" class="row">
-        <div class="column"></div>
+      <div id="totalsRow" class="row">
+        <div id="teamTotalDiv" class="column">
+            <span class="textSpan">Relay Team </span>
+            <br/>
+          <span id="teamTotalCount">0</span>
+          <br/>
+          <span class="textSpan">Miles Run</span>
+        </div>
 
         <div id="totalMileageDiv" class="column">
             <span id="totalCount">0</span>
             <br/>
-            <span class="textSpan">Total Miles Run</span>
+            <span class="textSpan">Grand Total Miles Run</span>
+        </div>
+        <div id="townTotalDiv" class="column">
+            <span class="textSpan">Community</span>
+            <br/>
+          <span id="townTotalCount">0</span>
+          <br/>
+          <span class="textSpan">Miles Run</span>
         </div>
 
-        <div class="column"></div>
       </div>
+
   </body>
 </html>

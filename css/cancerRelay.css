@@ -9,18 +9,21 @@ img.logo {
   margin-right: auto;
 }
 span.textSpan {
-  font-size: 72px;
+  font-size: 36px;
+}
+span.genderTextSpan {
+  font-size: 36px;
 }
 div.focus {
-  /*border: solid 1px;*/
-  color: yellow;
-  background-color: black;
+  color: pink;
+  background-color: gray;
 }
 
-#teamTotalDiv {
-  /*padding: 5px;*/
+#headerDiv {
   text-align: center;
-  /*background-color: cyan;*/
+}
+#teamTotalDiv {
+  text-align: center;
 }
 #teamTotalCount {
   font-size: 128px;
@@ -28,18 +31,51 @@ div.focus {
 }
 
 #townTotalDiv {
-  /*padding: 5px;*/
   text-align: center;
-  /*background-color: coral;*/
 }
 #townTotalCount {
   font-size: 128px;
   font-weight: bolder;
 }
 
+#teamMenDiv {
+  text-align: center;
+}
+#teamMenTotal {
+  font-size: 128px;
+  font-weight: bolder;
+}
+#teamWomenDiv {
+  text-align: center;
+}
+#teamWomenTotal {
+  font-size: 128px;
+  font-weight: bolder;
+}
+#townMenDiv {
+  text-align: center;
+}
+#townMenTotal {
+  font-size: 128px;
+  font-weight: bolder;
+}
+#townWomenDiv {
+  text-align: center;
+}
+#townWomenTotal {
+  font-size: 128px;
+  font-weight: bolder;
+}
+
+
 .column {
   float: left;
   width: 33.33%;
+  padding: 10px;
+}
+.genderColumn {
+  float: left;
+  width: 50%;
   padding: 10px;
 }
 .row:after {
@@ -49,13 +85,10 @@ div.focus {
 }
 
 #totalMileageDiv {
-  /*float: bottom;
-  display: block;*/
   text-align: center;
-  /*margin-top: 100px;*/
-  /*background-color: yellow;*/
 }
+
 #totalCount {
-  font-size: 512px;
+  font-size: 192px;
   font-weight: bolder;
 }
