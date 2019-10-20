@@ -15,10 +15,13 @@ span.genderTextSpan {
   font-size: 36px;
 }
 div.focus {
-  color: yellow;
-  background-color: black;
+  color: pink;
+  background-color: gray;
 }
 
+#headerDiv {
+  text-align: center;
+}
 #teamTotalDiv {
   text-align: center;
 }
