@@ -19,34 +19,26 @@ $(document).ready(function() {
     });
 
     $('#teamMenDiv').click(function() {
+        removeAllFocus();
         $('#teamMenDiv').addClass('focus');
-        $('#teamWomenDiv').removeClass('focus');
-        $('#townMenDiv').removeClass('focus');
-        $('#townWomenDiv').removeClass('focus');
     });
 
     $('#teamWomenDiv').click(function(){
-        $('#teamMenDiv').removeClass('focus');
+        removeAllFocus();
         $('#teamWomenDiv').addClass('focus');
-        $('#townMenDiv').removeClass('focus');
-        $('#townWomenDiv').removeClass('focus');
     });
 
     $('#townMenDiv').click(function() {
-        $('#teamMenDiv').removeClass('focus');
-        $('#teamWomenDiv').removeClass('focus');
+        removeAllFocus();
         $('#townMenDiv').addClass('focus');
-        $('#townWomenDiv').removeClass('focus');
     });
 
     $('#townWomenDiv').click(function(){
-        $('#teamMenDiv').removeClass('focus');
-        $('#teamWomenDiv').removeClass('focus');
-        $('#townMenDiv').removeClass('focus');
+        removeAllFocus();
         $('#townWomenDiv').addClass('focus');
     });
 
-    $('#logoDiv').click(function(){
+    $('#logoDiv').dblclick(function(){
         if (typeof(Storage) !== undefined) {
           localStorage.teamCount = 0;
           localStorage.townCount = 0;
@@ -58,13 +50,20 @@ $(document).ready(function() {
         }
     });
 
-    $('#totalMileageDiv').click(function() {
-        $('#teamMenDiv').removeClass('focus');
-        $('#teamWomenDiv').removeClass('focus');
-        $('#townMenDiv').removeClass('focus');
-        $('#townWomenDiv').removeClass('focus');
+    $('#headerRow').click(function() {
+      removeAllFocus();
+    });
+    $('#totalsRow').click(function() {
+      removeAllFocus();
     })
 });
+
+var removeAllFocus = function() {
+  $('#teamMenDiv').removeClass('focus');
+  $('#teamWomenDiv').removeClass('focus');
+  $('#townMenDiv').removeClass('focus');
+  $('#townWomenDiv').removeClass('focus');
+};
 
 var addItUp = function(entry) {
     if ($('#teamMenDiv').hasClass('focus')) {
@@ -103,7 +102,7 @@ var incrementTownMenTotal = function(entry) {
 };
 var incrementTownWomenTotal = function(entry) {
     increaseCount($('#townWomenTotal'), entry);
-    storeCount('teamWomen', entry);
+    storeCount('townWomen', entry);
 };
 
 
