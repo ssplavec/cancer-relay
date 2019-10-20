@@ -96,6 +96,11 @@ var incrementTeamWomenTotal = function(entry) {
     increaseCount($('#teamWomenTotal'), entry);
     storeCount('teamWomen', entry);
 };
+
+var incrementTownCount = function(entry) {
+  increaseCount($('#townTotalCount'), entry);
+  storeCount('town', entry);
+};
 var incrementTownMenTotal = function(entry) {
     increaseCount($('#townMenTotal'), entry);
     storeCount('townMen', entry);
@@ -103,12 +108,6 @@ var incrementTownMenTotal = function(entry) {
 var incrementTownWomenTotal = function(entry) {
     increaseCount($('#townWomenTotal'), entry);
     storeCount('townWomen', entry);
-};
-
-
-var incrementTownCount = function(entry) {
-    increaseCount($('#townTotalCount'), entry);
-    storeCount('town', entry);
 };
 
 var incrementTotalCount = function(entry) {
